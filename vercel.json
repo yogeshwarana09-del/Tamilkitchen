@@ -1,0 +1,10 @@
+{
+  "buildCommand": "",
+  "framework": "html",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

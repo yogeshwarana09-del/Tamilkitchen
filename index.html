@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Kitchen – Home Made Food</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <img src="assets/logo.png" alt="Tamil Kitchen – Homemade" class="logo-img" width="80" height="80">
+        <span class="logo-text">Homemade</span>
+      </div>
+      <div class="brand">
+        <h1 class="brand-name">TAMIL KITCHEN</h1>
+        <p class="brand-tagline">HOME MADE FOOD</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Food gallery">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide active" data-slide="0">
+            <div class="slide-bg" style="background-image: url('assets/breakfast.jpg');"></div>
+            <span class="slide-label">Breakfast</span>
+          </div>
+          <div class="carousel-slide" data-slide="1">
+            <div class="slide-bg" style="background-image: url('assets/lunch.jpg');"></div>
+            <span class="slide-label">Lunch</span>
+          </div>
+          <div class="carousel-slide" data-slide="2">
+            <div class="slide-bg" style="background-image: url('assets/dinner.jpg');"></div>
+            <span class="slide-label">Dinner</span>
+          </div>
+        </div>
+        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous slide">&lsaquo;</button>
+        <button type="button" class="carousel-btn carousel-next" aria-label="Next slide">&rsaquo;</button>
+        <div class="carousel-dots" role="tablist">
+          <button type="button" class="dot active" data-index="0" aria-label="Slide 1" aria-selected="true"></button>
+          <button type="button" class="dot" data-index="1" aria-label="Slide 2" aria-selected="false"></button>
+          <button type="button" class="dot" data-index="2" aria-label="Slide 3" aria-selected="false"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p>Veg & Non-Veg Items Available &bull; Subscription plans: Daily / Weekly / Monthly</p>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2 class="section-title">Subscription Plans</h2>
+      <div class="pricing-cards">
+        <div class="price-card">
+          <h3>Daily</h3>
+          <p class="price">&#8377;250</p>
+          <p class="price-note">Full meals as per plan</p>
+        </div>
+        <div class="price-card">
+          <h3>Weekly</h3>
+          <p class="price">&#8377;1,500</p>
+          <p class="price-note">Full meals as per plan</p>
+        </div>
+        <div class="price-card">
+          <h3>Monthly</h3>
+          <p class="price">&#8377;6,500</p>
+          <p class="price-note">Full meals as per plan</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="enquiry" id="enquiry">
+      <h2 class="section-title">Send an Enquiry</h2>
+      <form class="enquiry-form" id="enquiryForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+          <span class="form-error" id="nameError" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile number <span class="required">*</span></label>
+          <input type="tel" id="mobile" name="mobile" required placeholder="10-digit mobile number" autocomplete="tel">
+          <span class="form-error" id="mobileError" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
+          <span class="form-error" id="emailError" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="address">Address <span class="required">*</span></label>
+          <textarea id="address" name="address" required placeholder="Your full address" rows="3" autocomplete="street-address"></textarea>
+          <span class="form-error" id="addressError" role="alert"></span>
+        </div>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <h2 class="footer-title">Contact</h2>
+        <p class="footer-address">
+          No 2a villa Happinest<br>
+          Kalavakkam Thiruporur<br>
+          603110
+        </p>
+        <p class="footer-whatsapp">Join our WhatsApp group for updates &amp; orders.</p>
+        <div class="footer-qr">
+          <p>Scan to join</p>
+          <img src="assets/qr code.jpeg" alt="WhatsApp Group QR Code" class="qr-placeholder">
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
