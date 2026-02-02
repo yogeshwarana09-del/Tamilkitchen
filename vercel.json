@@ -1,10 +1,5 @@
 {
   "buildCommand": "",
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "outputDirectory": "."
 }
 
