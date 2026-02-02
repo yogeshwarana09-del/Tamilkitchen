@@ -1,6 +1,5 @@
 {
   "buildCommand": "",
-  "framework": "html",
   "redirects": [
     {
       "source": "/(.*)",
@@ -8,3 +7,4 @@
     }
   ]
 }
+
